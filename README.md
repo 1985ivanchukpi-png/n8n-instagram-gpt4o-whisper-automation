@@ -1,1 +1,24 @@
-Instagram AI Assistant (n8n + GPT-4o + Whisper)🎯 Main GoalAutomated 24/7 customer support system for Instagram Direct, capable of processing complex queries autonomously.🚀 Key FeaturesMultimodal Processing: Automatically detects and analyzes both text and voice messages.Voice Control: Integrated OpenAI Whisper for high-accuracy speech-to-text transcription.Intelligent Responses: Powered by GPT-4o for structured and context-aware communication.Content Filtering: Auto-recognition of photos/videos with polite user notifications regarding media limitations.🛠 Technical AchievementsData Stability: Fixed JSON validation issues using JSON.stringify for complex text strings.API Optimization: Engineered a workaround for Instagram’s 1000-character limit.Performance: Configured 120s execution timeouts for stable processing of heavy AI requests.DevOps: Deployed in an isolated Docker environment on a self-hosted Linux server for 24/7 autonomy.💻 Tech StackAutomation: n8n (Self-hosted).AI Models: OpenAI GPT-4o, OpenAI Whisper.APIs: Meta Graph API (Instagram Webhooks).Infrastructure: Docker, Docker Compose, Linux (Ubuntu/Debian)
+# Instagram AI Assistant (n8n + GPT-4o + Whisper)
+
+Автоматизированная система поддержки клиентов в Instagram Direct, способная обрабатывать сложные запросы автономно 24/7.
+
+## Основные функции
+* **Мультимодальная обработка**: Автоматически распознает и анализирует как текстовые, так и голосовые сообщения.
+* **Голосовое управление**: Интегрированный OpenAI Whisper для высокоточной транскрипции речи в текст.
+* **Интеллектуальные ответы**: Работает на базе GPT-4o для контекстных и структурированных ответов.
+* **Фильтрация контента**: Автоматическое распознавание медиафайлов с вежливым уведомлением пользователя об ограничениях.
+
+## Технические особенности
+* **Стабильность данных**: Исправлены проблемы валидации JSON с использованием JSON.stringify для сложных строк.
+* **Оптимизация API**: Разработан обходной путь для лимита в 1000 символов Instagram.
+* **Производительность**: Настроены тайм-ауты выполнения 120с для стабильной обработки тяжелых ИИ-запросов.
+
+## Стек технологий
+* **Automation**: n8n (Self-hosted)
+* **AI Models**: OpenAI GPT-4o, OpenAI Whisper
+* **Infrastructure**: Docker, Docker Compose, Linux (Ubuntu/Debian)
+
+## Быстрый старт
+1. Скопируйте `.env.example` в `.env` и заполните ваши API ключи.
+2. Запустите контейнеры: `docker-compose up -d`.
+3. Импортируйте JSON файл из папки `workflows` в ваш n8n.
